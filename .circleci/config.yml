@@ -46,4 +46,4 @@ jobs:
       # run tests with phpunit or codecept
       #- run: ./vendor/bin/phpunit
       - run: ./vendor/bin/php-cs-fixer fix
-      - run: ./.circleci/.php-cs-fixer.sh
+      - run: sh ./.circleci/.php-cs-fixer.sh
