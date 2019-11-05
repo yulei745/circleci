@@ -1,6 +1,6 @@
 <?php
 
-/*sdfklj fff*/
+/*sdfklj  bbbbb fff*/
 namespace Discuz\Foundation;
 
 use Illuminate\Container\Container;
