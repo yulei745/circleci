@@ -1,5 +1,6 @@
 <?php
 
+/*sdfklj */
 namespace Discuz\Foundation;
 
 use Illuminate\Container\Container;
