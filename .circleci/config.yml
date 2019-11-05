@@ -47,3 +47,22 @@ jobs:
       #- run: ./vendor/bin/phpunit
       - run: ./vendor/bin/php-cs-fixer fix
       - run: sh ./.circleci/.php-cs-fixer.sh
+  deploy:
+    machine:
+      enabled: true
+    steps:
+      - run:
+          name: Deploy Over SSH
+          command: |
+            ssh $SSH_USER@$SSH_HOST "echo hello"
+workflows:
+  version: 2.1
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
