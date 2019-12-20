@@ -8,3 +8,8 @@
  */
 
 echo 'hello werwer';
+
+$ar = array(1,    2, 3);
+
+$a=false;
+if($a===false){echo 'bbb'}
